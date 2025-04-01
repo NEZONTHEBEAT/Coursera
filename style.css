@@ -12,7 +12,7 @@ nav {
     gap: 25px;
     align-items: center;
     background-color: #fff;
-    padding: 15px 74px;
+    padding: 10px 74px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -22,21 +22,21 @@ nav {
 }
 
 .explore-button {
-    background-color: #fff;
+    background-color: #eef2f8 ;
     border: 1px solid #0056d2 ;
     color: #0056d2;
-    padding: 12px 28px;
+    padding: 10px 22px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .explore-button i{
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #0056d2;
-    width: 18px;
-    height: 18px;
+    position: relative;
+    left: 5px;
+    color: #0056d2;
+    cursor: pointer;
 }
 
 .search-container {
@@ -68,4 +68,47 @@ nav {
     transform: translateY(-50%);
     color: #0056d2;
     cursor: pointer;
+}
+
+#right-navBar{
+    display: flex;
+    margin-left: 144px;
+}
+
+.right-nav{
+    display: flex;
+}
+
+.right-nav li{
+    list-style: none;
+    padding: 0 11px;
+    
+}
+
+.right-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.right-nav li:nth-of-type(3) a{
+    color: #0056d2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li .nav-rightButton{
+    height: 38px;
+    border: 1px solid #0056d2 ;
+    background-color: #fff;
+    color: #0056d2;
+    padding: 4px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
 }
