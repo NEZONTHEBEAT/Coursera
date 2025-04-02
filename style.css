@@ -87,6 +87,8 @@ nav {
 
 .right-nav a{
     text-decoration: none;
+    display: flex;
+    margin-top: 6px;
     color: black;
     font-size: 14px;
     font-family: "Poppins", sans-serif;
@@ -106,7 +108,7 @@ li .nav-rightButton{
     border: 1px solid #0056d2 ;
     background-color: #fff;
     color: #0056d2;
-    padding: 4px 7px;
+    padding: 6px 4px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
