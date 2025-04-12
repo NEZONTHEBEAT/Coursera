@@ -39,6 +39,88 @@ nav {
     cursor: pointer;
 }
 
+/* explore button hover */
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  /*display: flex;*/
+  gap:100px;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.Exploreroles {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-dropdown {
+  
+  align-items: center; /* Aligns text vertically */
+  gap: 10px; /* Space between title and description */
+  padding: 15px;
+  width: 200px;
+  text-align: left;
+}
+
+
+.card-dropdown h3 {
+  margin: 0px;
+  font-size: 16px;
+  color: #333;
+  font-style: nowrap;
+}
+.card-dropdown p {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+} 
+
+/* search container */
 .search-container {
     position: relative;
     display: flex;
@@ -114,3 +196,234 @@ li .nav-rightButton{
     font-size: 14px;
     font-weight: 600;
 }
+
+/* banner section............ */
+
+
+.div1{
+
+  background-color: #effffb;
+  width:50%;
+  float:left;
+  height: 450px;
+  
+  
+}
+
+.div2{
+
+  background-color: #edfffa;
+  width:50%;
+  float:right;
+  height: 450px;
+
+}
+
+.div1 img {
+  width: 170px;  
+  height: auto; 
+  max-width: 100%; 
+  max-height: 80px; 
+  object-fit: contain; 
+}
+
+.div2 img{
+  width: 750px;
+  height: 450px;
+  object-fit: contain;
+  
+  margin: 0 auto;
+} 
+
+/* collaborate section */
+
+.collaboration-section {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    min-height: 330px;
+    align-items: center;
+    padding: 68px 20px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+  
+  .collaboration-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .highlight {
+    color: #0056d2;
+    transition: all 0.3s ease;
+  }
+
+  .highlight:hover{
+    text-decoration: underline;
+  }
+  
+  .logos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .logos img {
+    height: 40px;
+    object-fit: contain;
+  }
+  
+/* Career Section */
+.career-container {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .sidebar h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #0056d2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cards-container {
+    flex: 3;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin: 10px 0 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .card h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .card ul {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+  
+  .card ul li {
+    margin-bottom: 4px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #0056d2;
+  }
+
+
+  /* 
+    .careers {
+      display: flex;
+      padding: 40px;
+      gap: 30px;
+      background: #fff;
+    }
+
+    .sidebar {
+      width: 250px;
+    }
+
+    .sidebar h2 {
+      font-size: 26px;
+    }
+
+    .sidebar button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0b66ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 300px;
+      flex: 1 1 300px;
+    }
+
+    .card img.avatar {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .credentials {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .credentials li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .cred-logo {
+      height: 20px;
+    } */
